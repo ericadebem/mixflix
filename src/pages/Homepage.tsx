@@ -30,14 +30,13 @@ export const Homepage = () => {
           Hin
           <input type="text" name="" id="" />
         </label>
-        <Modal />
+        {/* <Modal /> */}
         <Button text="Suchen" />
       </form>
       {travelData &&
         travelData.map((travel) => (
           <TravelCard data={travel} key={travel._id} />
         ))}
-
     </div>
   );
 };

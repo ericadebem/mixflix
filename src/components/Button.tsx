@@ -1,5 +1,7 @@
-export const Button = (text: string) => {
-    return(
-        <button>{text}</button>
-    )
+interface IButtonProps {
+  text: string;
+}
+
+export const Button = ({ text }: IButtonProps) => {
+  return <button>{text}</button>;
 };

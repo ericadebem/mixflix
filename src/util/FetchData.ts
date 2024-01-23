@@ -1,8 +1,10 @@
 import axios from "axios";
 
-export const getData = async () => {
+export const FetchData = async () => {
   try {
-    axios.get("").then((res) => res.data);
+    const response = await axios.get("http://localhost:5000/api/travel/many");
+    const data = response.data;
+    return data;
   } catch (error) {
     console.error(error);
     throw new Error(error);

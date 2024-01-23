@@ -8,11 +8,6 @@ export const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: (
-      <div>
-        <p>Error</p>
-      </div>
-    ),
     children: [
       { path: "/", element: <Homepage /> },
       { path: "/customer", element: <CustomerPage /> },
