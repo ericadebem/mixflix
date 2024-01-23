@@ -1,5 +1,5 @@
-import Github from "Github-icon.png";
-import Linkedin from "Linkedin-icon.png";
+// import Github from "Github-icon.png";
+// import Linkedin from "Linkedin-icon.png";
 
 export const Footer = () => {
   return (
@@ -15,10 +15,10 @@ export const Footer = () => {
         <p>Folge uns:</p>
         <ul>
           <li>
-            <img src={Github} />
+            {/* <img src={Github} /> */}
           </li>
           <li>
-            <img src={Linkedin} />
+            {/* <img src={Linkedin} /> */}
           </li>
         </ul>
       </div>

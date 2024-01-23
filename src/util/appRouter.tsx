@@ -3,6 +3,7 @@ import { App } from "../App";
 import { CustomerPage } from "../pages/CustomerPage";
 import { EmployeePage } from "../pages/EmployeePage";
 import { Homepage } from "../pages/Homepage";
+import { LoginPage } from "../pages/LoginPage";
 
 export const appRouter = createBrowserRouter([
   {
@@ -10,6 +11,7 @@ export const appRouter = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <Homepage /> },
+      { path: "/login", element: <LoginPage /> },
       { path: "/customer", element: <CustomerPage /> },
       { path: "/employee", element: <EmployeePage /> },
     ],
