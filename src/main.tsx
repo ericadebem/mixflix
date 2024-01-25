@@ -7,3 +7,4 @@ import "./style/main.scss"
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <RouterProvider router={appRouter} />
 );
+
