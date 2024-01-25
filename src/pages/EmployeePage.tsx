@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { FetchData } from "../util/FetchData";
+import { EmployeeCard } from "../components/EmployeeCard";
 
 export const EmployeePage = () => {
   const [filter, setFilter] = useState({});
   const [employeeData, setEmployeeData] = useState([]);
   useEffect(() => {
-    FetchData("/employee/many").then((data) => setEmployeeData(data));
+    FetchData("employee").then((data) => setEmployeeData(data.employee));
+    console.log(employeeData)
   }, []);
   return (
     <div>

@@ -1,6 +1,7 @@
 export const CustomerCard = ({ data }) => {
     <div>
-      <p>{JSON.stringify(data)}</p>
+      <p>{data.name}</p>
+      <p>{data.age}</p>
     </div>;
   };
   

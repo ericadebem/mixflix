@@ -8,7 +8,7 @@ export const Homepage = () => {
   const [filter, setFilter] = useState({});
   const [travelData, setTravelData] = useState([]);
   useEffect(()=> {
-    FetchData("travel/many").then(data =>setTravelData(data))
+    FetchData("travel/many").then(data =>setTravelData(data.travel))
   },[])
   return (
     <div>
