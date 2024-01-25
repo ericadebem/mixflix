@@ -6,7 +6,6 @@ export const LoginPage = () => {
     <div>
       <h1>Login Page</h1>
       <form> 
-        {/* onSubmit?? */}
         <label htmlFor="username">Username/E-mail:</label>
         <input type="text" name="username" id="username" />
 

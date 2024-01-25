@@ -17,7 +17,13 @@ export const Navbar = () => {
             <li>
               <NavLink to="/login">Login</NavLink>
             </li>
-          )}
+          )}{" "}
+          <li>
+            <NavLink to="/customer">Customer</NavLink>
+          </li>{" "}
+          <li>
+            <NavLink to="/employee">Employee</NavLink>
+          </li>
         </div>
       </ul>
     </nav>
