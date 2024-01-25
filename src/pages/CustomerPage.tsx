@@ -6,7 +6,7 @@ export const CustomerPage = () => {
   const [filter, setFilter] = useState({});
   const [customerData, setCustomerData] = useState([]);
   useEffect(() => {
-    FetchData("customer").then((data) => setCustomerData(data));
+    FetchData("customer").then((data) => setCustomerData(data.customer));
     console.log(customerData)
   }, []);
   return (

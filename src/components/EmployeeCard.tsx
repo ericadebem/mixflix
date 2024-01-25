@@ -1,5 +1,7 @@
 export const EmployeeCard = ({ data }) => {
-  <div>
-    <p>{data.name}</p>
-  </div>;
+  return (
+    <div>
+      <p>{data.name}</p>
+    </div>
+  );
 };

@@ -7,7 +7,7 @@ export const EmployeePage = () => {
   const [employeeData, setEmployeeData] = useState([]);
   useEffect(() => {
     FetchData("employee").then((data) => setEmployeeData(data.employee));
-    console.log(employeeData)
+    console.log(employeeData);
   }, []);
   return (
     <div>
