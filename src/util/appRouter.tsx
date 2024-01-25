@@ -4,6 +4,7 @@ import { CustomerPage } from "../pages/CustomerPage";
 import { EmployeePage } from "../pages/EmployeePage";
 import { Homepage } from "../pages/Homepage";
 import { LoginPage } from "../pages/LoginPage";
+import {NewTravelPage} from "../pages/NewTravelPage"
 
 export const appRouter = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ export const appRouter = createBrowserRouter([
       { path: "/login", element: <LoginPage /> },
       { path: "/customer", element: <CustomerPage /> },
       { path: "/employee", element: <EmployeePage /> },
+      { path: "/newtravel", element: <NewTravelPage /> },
     ],
   },
 ]);

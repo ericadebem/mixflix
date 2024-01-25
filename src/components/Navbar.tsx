@@ -24,6 +24,9 @@ export const Navbar = () => {
           <li>
             <NavLink to="/employee">Employee</NavLink>
           </li>
+          <li>
+            <NavLink to="/newtravel">New Travel</NavLink>
+          </li>
         </div>
       </ul>
     </nav>
