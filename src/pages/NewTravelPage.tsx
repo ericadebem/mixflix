@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Button } from "../components/Button";
-import axios, { AxiosResponse } from "axios";
+import axios, { AxiosError, AxiosResponse } from "axios";
 
 interface ITravelCard {
   from: string;
@@ -13,7 +12,7 @@ interface ITravelCard {
 export const SendData = async (endpoint: string, data: ITravelCard) => {
   try {
     await axios.post(`http://localhost:5050/api/${endpoint}`, data);
-  } catch (error) {
+  } catch (error:AxiosError) {
     console.error(error);
     throw new Error(error);
   }
